@@ -1,0 +1,141 @@
+﻿{
+  "name": "IISSchoolЗапись",
+  "modelName": "i-i-s-school-запись",
+  "className": "Запись",
+  "nameSpace": "IIS.School",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "времяконца",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "времяначало",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "услуги",
+      "relatedTo": "i-i-s-school-услуги",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "клиенты",
+      "relatedTo": "i-i-s-school-клиенты",
+      "inverse": "запись"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ЗаписьE",
+      "modelName": "i-i-s-school-запись",
+      "attrs": [
+        {
+          "name": "времяначало",
+          "caption": "Времяначало",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "времяконца",
+          "caption": "Времяконца",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "стоимость",
+          "lookupValueField": "стоимость",
+          "relationName": "Услуги",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "стоимость",
+              "caption": "Стоимость",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Услуги",
+          "name": "услуги",
+          "relatedTo": "i-i-s-school-услуги",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "клиентыE",
+          "caption": "Клиенты",
+          "name": "клиенты",
+          "relatedTo": "i-i-s-school-клиенты",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ЗаписьL",
+      "modelName": "i-i-s-school-запись",
+      "attrs": [
+        {
+          "name": "времяначало",
+          "caption": "Времяначало",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "времяконца",
+          "caption": "Времяконца",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Услуги",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "стоимость",
+              "caption": "Стоимость",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Стоимость",
+          "name": "услуги",
+          "relatedTo": "i-i-s-school-услуги",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

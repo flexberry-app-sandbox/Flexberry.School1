@@ -1,0 +1,44 @@
+﻿{
+  "applicationCaption": "School",
+  "applicationTitle": "School",
+  "items": [
+    {
+      "link": null,
+      "menuName": "school",
+      "caption": "School",
+      "title": "School",
+      "children": [
+        {
+          "link": "i-i-s-school-запись-l",
+          "menuName": null,
+          "caption": "Запись",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-school-услуги-l",
+          "menuName": null,
+          "caption": "Услуги",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "справочники-клиенты",
+      "caption": "Справочники клиенты",
+      "title": "Справочники клиенты",
+      "children": [
+        {
+          "link": "i-i-s-school-услуги-l",
+          "menuName": null,
+          "caption": "Услуги",
+          "title": "Услуги",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

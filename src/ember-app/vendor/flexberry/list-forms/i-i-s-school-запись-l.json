@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-school-запись-e",
+  "editForm": "i-i-s-school-запись-e",
+  "external": false,
+  "caption": "Запись",
+  "name": "IISSchoolЗаписьL",
+  "className": "ЗаписьL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-school-запись",
+      "modelProjection": "ЗаписьL"
+    }
+  ]
+}

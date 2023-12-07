@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-school-услуги-e",
+  "editForm": "i-i-s-school-услуги-e",
+  "external": false,
+  "caption": "Услуги",
+  "name": "IISSchoolУслугиL",
+  "className": "УслугиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-school-услуги",
+      "modelProjection": "УслугиL"
+    }
+  ]
+}

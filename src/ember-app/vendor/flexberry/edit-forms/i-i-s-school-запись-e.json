@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Услуги",
+      "projection": "УслугиL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Запись",
+  "name": "IISSchoolЗаписьE",
+  "className": "ЗаписьE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-school-запись",
+      "modelProjection": "ЗаписьE"
+    }
+  ]
+}
